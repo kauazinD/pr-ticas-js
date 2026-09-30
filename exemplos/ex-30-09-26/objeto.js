@@ -6,12 +6,24 @@ const carro = {
     velocidade:0,
     acelerar: function() {
         this.velocidade+=10
-        console.log(this.velocidade)
     },
     buzinar: function () {
         console.log("estou buzinando...");
-    }
+    },
+    frear: function() {
+        this.velocidade-=5
+    },
 }
-carro.buzinar();
 carro.acelerar();
+carro.frear();
+carro.acelerar();
+carro.frear();
+carro.acelerar();
+carro.frear();
+carro.acelerar();
+carro.frear();
+carro.acelerar();
+carro.frear();
+carro.acelerar();
+carro.frear();
 console.table(carro)
