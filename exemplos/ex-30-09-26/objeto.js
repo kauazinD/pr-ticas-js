@@ -2,8 +2,16 @@ const carro = {
     marca: "Fiat",
     cor: "branco",
     modelo: "Toro",
-    ano: 2015
+    ano: 2015,
+    velocidade:0,
+    acelerar: function() {
+        this.velocidade+=10
+        console.log(this.velocidade)
+    },
+    buzinar: function () {
+        console.log("estou buzinando...");
+    }
 }
-console.log(carro.ano)
-carro.cor="preto"
+carro.buzinar();
+carro.acelerar();
 console.table(carro)
